@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'KNIGHT WARRIOR';
+    src: url('./assets/fonts/KNIGHTWARRIOR.eot');
+    src: url('./assets/fonts/KNIGHTWARRIOR.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/KNIGHTWARRIOR.woff2') format('woff2'),
+        url('./assets/fonts/KNIGHTWARRIOR.woff') format('woff'),
+        url('./assets/fonts/KNIGHTWARRIOR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@import "tailwindcss";
+
+@theme{
+    
+    /* Font family */
+    --font-knight: "KNIGHT WARRIOR", sans-serif;
+    --font-monserrat: "Montserrat", sans-serif;
+    --font-alexandria: "Alexandria", sans-serif;
+
+     /* brakpoint */
+    --breakpoint-1xl: 120rem;    /* 1920px */
+
+    /* colors */
+    --color-primary: #000000;
+    --color-secondary: #2CFE90;
+
+    /* shadow */
+}
+
+body{
+    @apply text-lg text-white leading-[100%] bg-primary font-monserrat font-normal min-w-80
+  }
+header{
+    background: linear-gradient(0deg, rgba(119, 196, 255, 0.32), rgba(119, 196, 255, 0.32)), rgba(255, 255, 255, 0.1);
+    border: 0.5px solid rgba(168, 175, 189, 0.2);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.12);
+}
+
+.bg-gradient-custom {
+    background: linear-gradient(115.73deg, #1D222E -16.91%, rgba(29, 34, 46, 0) 109.07%);
+  }
+.swiper-pagination{
+    @apply bottom-4 lg:bottom-[116px]!
+}
+.swiper-pagination-bullet{
+    @apply w-3! h-3! bg-white!
+}
+.swiper-pagination-bullet-active{
+    @apply bg-secondary!
+}
+
+
+@layer base{
+    h2{
+        @apply text-2xl lg:text-[54px] font-knight leading-[100%] tracking-[3.3px] text-center
+    }
+}
+
+
+
+@layer components{
+    .btn{
+        @apply px-7 py-4 rounded-full text-lg font-bold text-primary leading-[100%] bg-secondary shadow-[inset_0_0_12px_4px_#FFFE90]
+    }
+    .shadow-left-1{
+        @apply absolute w-[66.145%] h-full top-0 left-0 bg-linear-[180deg,#000000_32.63%,rgba(0,0,0,0)_90.24%] -rotate-90
+    }
+    .shadow-top{
+        @apply absolute w-full h-full top-0 left-0 right-0 bg-linear-[180deg,#000000_5.94%,rgba(0,0,0,0)_27.78%] lg:bg-linear-[180deg,#000000_7.57%,rgba(0,0,0,0)_26.5%] 
+    }
+    .shadow-bottom{
+        @apply absolute w-full h-full bottom-0 left-0 right-0 bg-linear-[180deg,#000000_5.94%,rgba(0,0,0,0)_63.2%] lg:bg-linear-[180deg,#000000_8.24%,rgba(0,0,0,0.5)_22.01%,rgba(0,0,0,0)_35.79%] -rotate-180 lg:rotate-180
+    }
+    .shadow-3{
+        @apply absolute w-full h-[196px] bg-linear-[175.84deg,#000000_77.86%,rgba(0,0,0,0.8)_116.8%] z-10
+    }
+    
+    
+}
+
+
+
+
+
+@utility container{ 
+    @apply mx-auto px-4;
+    @media (width >= 120rem /* 1920px */) {
+          max-width: var(--breakpoint-1xl) /* 1920px */;
+          padding-inline: 7.5rem    /* 120px */; 
+      }
+  }
+
+
+
