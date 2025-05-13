@@ -13,6 +13,7 @@ const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
     loop: true,
+    spaceBetween: 70,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

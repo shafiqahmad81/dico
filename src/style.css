@@ -27,6 +27,9 @@
     --color-secondary: #2CFE90;
 
     /* shadow */
+    --drop-shadow-3xl: 0px 90.8384px 143.827px rgba(0, 0, 0, 0.14), 0px 34.0644px 174.107px rgba(0, 0, 0, 0.12), 0px 41.6343px 56.774px rgba(0, 0, 0, 0.2); 
+    --inset-shadow-md: inset 0px 0px 50px rgba(255, 255, 255, 0.25); 
+    --inset-shadow-md-partner: inset 0px 4px 4px rgba(255, 255, 255, 0.25); 
 }
 
 body{
@@ -37,11 +40,13 @@ header{
     border: 0.5px solid rgba(168, 175, 189, 0.2);
     box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.12);
 }
-
+.bg-gradient-dark {
+  background: linear-gradient(175.84deg, rgba(0, 0, 0, 0.8) 116.8%, rgba(0, 0, 0, 0) 77.86%);
+}
 .bg-gradient-custom {
     background: linear-gradient(115.73deg, #1D222E -16.91%, rgba(29, 34, 46, 0) 109.07%);
   }
-.swiper-pagination{
+.mySwiper.swiper-pagination{
     @apply bottom-4 lg:bottom-[116px]!
 }
 .swiper-pagination-bullet{
@@ -51,10 +56,25 @@ header{
     @apply bg-secondary!
 }
 
+.developSwiper .swiper-pagination {
+    @media (width >= 64rem) {
+        bottom: 64px !important;
+    }
+.partnersSwiper .swiper-pagination{
+    @apply bottom-11!
+}
+}
+
 
 @layer base{
     h2{
-        @apply text-2xl lg:text-[54px] font-knight leading-[100%] tracking-[3.3px] text-center
+        @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-[54px] font-knight xl:leading-[100%] tracking-[1.5px] lg:tracking-[3.3px] text-center
+    }
+    h3{
+        @apply text-xs lg:text-xl xl:text-[32px] font-semibold xl:leading-[100%]
+    }
+    h4{
+        @apply text-sm md:text-xl lg:text-2xl xl:text-[28px] font-semibold xl:leading-[100%]
     }
 }
 
@@ -62,7 +82,7 @@ header{
 
 @layer components{
     .btn{
-        @apply px-7 py-4 rounded-full text-lg font-bold text-primary leading-[100%] bg-secondary shadow-[inset_0_0_12px_4px_#FFFE90]
+        @apply px-7 py-4 rounded-full text-lg font-bold text-primary leading-[100%] bg-secondary shadow-[inset_0_0_12px_4px_#FFFE90] cursor-pointer hover:bg-secondary/60 transition-colors duration-500
     }
     .shadow-left-1{
         @apply absolute w-[66.145%] h-full top-0 left-0 bg-linear-[180deg,#000000_32.63%,rgba(0,0,0,0)_90.24%] -rotate-90
@@ -73,11 +93,42 @@ header{
     .shadow-bottom{
         @apply absolute w-full h-full bottom-0 left-0 right-0 bg-linear-[180deg,#000000_5.94%,rgba(0,0,0,0)_63.2%] lg:bg-linear-[180deg,#000000_8.24%,rgba(0,0,0,0.5)_22.01%,rgba(0,0,0,0)_35.79%] -rotate-180 lg:rotate-180
     }
-    .shadow-3{
-        @apply absolute w-full h-[196px] bg-linear-[175.84deg,#000000_77.86%,rgba(0,0,0,0.8)_116.8%] z-10
+    
+    
+    .border-green{
+        background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(87, 255, 99, 1), rgba(255, 243, 144, 1)) border-box;
+        border-radius: 50px;
+        border: 12px solid transparent;
     }
-    
-    
+    .border-yellow{
+        background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(254, 244, 87, 1), rgba(254, 244, 87, 0.32)) border-box;
+        border-radius: 50px;
+        border: 2px solid transparent;
+    }
+    .border-sky{
+        background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(119, 196, 255, 1), rgba(119, 196, 255, 0.32)) border-box;
+        border-radius: 50px;
+        border: 2px solid transparent;
+    }
+    .border-orange{
+        background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(255, 151, 106, 1), rgba(255, 151, 106, 0.32)) border-box;
+        border-radius: 50px;
+        border: 2px solid transparent;
+    }
+    .border-bg-white{
+        background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.05)) border-box;
+        border-radius: 24px;
+        border: 2px solid transparent;
+    }
+    .border-gray-orange{
+        background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(119, 196, 255, 1), rgba(255, 149, 108, 1)) border-box;
+        border-radius: 24px;
+        border: 2px solid transparent;
+    }
+    .border-gray-dark{
+        background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(39, 39, 39, 1), rgba(20, 20, 20, 1)) border-box;
+        border: 10px solid transparent;
+    }
 }
 
 

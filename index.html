@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="shortcut icon" href="./src/assets/icon/favicon.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DICO STUDIOS | Home</title>
   <link rel="stylesheet" href="./src/style.css">
@@ -11,7 +11,6 @@
 
 <body>
   <section class="relative">
-
     <div class="container absolute top-4 xl:top-[59px] left-0 right-0 z-50">
       <div class="lg:px-10 ">
         <header class="bg-[#77C4FF]/32 px-4 lg:px-16 py-1.5 lg:py-[18px] rounded-3xl">
@@ -26,9 +25,18 @@
                 <li><a class="text-xl font-semibold leading-[100%]" href="#">About</a></li>
               </ul>
             </nav>
-            <div class="hidden lg:block">
+
+            <!-- mobile -->
+            <!-- <nav class="bg-[#77C4FF] absolute top-20 w-screen h-screen z-60">
+              <ul class="flex flex-col items-center gap-8">
+                <li><a class="text-xl font-semibold leading-[100%]" href="#">Services</a></li>
+                <li><a class="text-xl font-semibold leading-[100%]" href="#">Portfolio</a></li>
+                <li><a class="text-xl font-semibold leading-[100%]" href="#">About</a></li>
+              </ul>
+            </nav> -->
+            <a href="#" class="hidden lg:block">
               <button class="btn">Contact</button>
-            </div>
+            </a>
             <svg class="lg:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
               <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
                 d="M3.333 4.168h13.333M3.333 10h13.333M3.333 15.832h13.333" />
@@ -54,7 +62,7 @@
                     2D/3D art, animation, and
                     co-development
                     support.</p>
-                  <button class="btn mt-6">Get In Touch</button>
+                  <a href="#" class="btn mt-6 inline-block">Get In Touch</a>
                 </div>
               </div>
             </div>
@@ -83,7 +91,7 @@
                     2D/3D art, animation, and
                     co-development
                     support.</p>
-                  <button class="btn mt-6">Get In Touch</button>
+                  <a href="#" class="btn mt-6 inline-block">Get In Touch</a>
                 </div>
               </div>
             </div>
@@ -112,7 +120,7 @@
                     2D/3D art, animation, and
                     co-development
                     support.</p>
-                  <button class="btn mt-6">Get In Touch</button>
+                  <a href="" class="btn mt-6 inline-block">Get In Touch</a>
                 </div>
               </div>
             </div>
@@ -137,40 +145,40 @@
       <div class="animate-marquee inline-block">
         <div class="flex gap-[62px] px-4">
           <!-- Block 1 -->
-          <div class="flex items-center gap-5 min-w-max">
+          <a href="#" class="flex items-center gap-5 min-w-max">
             <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
             <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
               ANIMATION SERVICES
             </span>
-          </div>
+          </a>
           <!-- Block 2 -->
-          <div class="flex items-center gap-5 min-w-max">
+          <a href="#" class="flex items-center gap-5 min-w-max">
             <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
             <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
               3D ART
             </span>
-          </div>
+          </a>
           <!-- Block 3 -->
-          <div class="flex items-center gap-5 min-w-max">
+          <a href="#" class="flex items-center gap-5 min-w-max">
             <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
             <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
               CONCEPT ART
             </span>
-          </div>
+          </a>
           <!-- Block 4 -->
-          <div class="flex items-center gap-5 min-w-max">
+          <a href="#" class="flex items-center gap-5 min-w-max">
             <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
             <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
               2D GAME ART
             </span>
-          </div>
+          </a>
           <!-- Block 5 -->
-          <div class="flex items-center gap-5 min-w-max">
+          <a href="#" class="flex items-center gap-5 min-w-max">
             <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
             <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
               CO-DEVELOPMENT
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -193,97 +201,208 @@
   </section>
 
   <!-- partners section -->
-  <section class="mt-[123px] mb-[120px] bg-center bg-cover bg-no-repeat"
+  <section class="mt-[54px] lg:mt-[123px] lg:mb-[120px] bg-center bg-cover bg-no-repeat"
     style="background-image: url(./src/assets/icon/partner-bg.png);">
     <h2>Trusted by the best -our Clients & partners</h2>
-    <div class="mt-[120px] flex items-center justify-center gap-[42px]">
-      <div class="p-px rounded-[42px] bg-gradient-to-br from-[rgba(255,255,255,0.77)] to-[rgba(255,255,255,0.05)]">
+    <div class="mt-8 lg:mt-[120px] flex items-center justify-center gap-3 lg:gap-6 xl:gap-[42px] flex-wrap">
+      <div
+        class="p-px rounded-xl lg:rounded-3xl xl:rounded-[42px] bg-gradient-to-br from-[rgba(255,255,255,0.77)] to-[rgba(255,255,255,0.05)]">
         <div
-          class="bg-black w-[204px] h-[204px] p-3 m-px rounded-[42px] flex items-center justify-center overflow-hidden">
+          class="bg-black w-[60px] lg:w-36 xl:w-[204px] h-[60px] lg:h-36 xl:h-[204px] p-[3px] lg:p-2 xl:p-3 m-px rounded-xl lg:rounded-3xl xl:rounded-[42px] flex items-center justify-center overflow-hidden">
           <img src="./src/assets/icon/partners-1.png" alt="Logo" class=" w-full" />
         </div>
       </div>
-      <div class="p-px rounded-[42px] bg-gradient-to-br from-[rgba(255,255,255,0.77)] to-[rgba(255,255,255,0.05)]">
+      <div
+        class="p-px rounded-xl lg:rounded-3xl xl:rounded-[42px] bg-gradient-to-br from-[rgba(255,255,255,0.77)] to-[rgba(255,255,255,0.05)]">
         <div
-          class="bg-black w-[204px] h-[204px] p-3 m-px rounded-[42px] flex items-center justify-center overflow-hidden">
+          class="bg-black w-[60px] lg:w-36 xl:w-[204px] h-[60px] lg:h-36 xl:h-[204px] p-[3px] lg:p-2 xl:p-3 m-px rounded-xl lg:rounded-3xl xl:rounded-[42px] flex items-center justify-center overflow-hidden">
           <img src="./src/assets/icon/partners-2.png" alt="Logo" class=" w-full" />
         </div>
       </div>
-      <div class="p-px rounded-[42px] bg-gradient-to-br from-[rgba(255,255,255,0.77)] to-[rgba(255,255,255,0.05)]">
+      <div
+        class="p-px rounded-xl lg:rounded-3xl xl:rounded-[42px] bg-gradient-to-br from-[rgba(255,255,255,0.77)] to-[rgba(255,255,255,0.05)]">
         <div
-          class="bg-black w-[204px] h-[204px] p-3 m-px rounded-[42px] flex items-center justify-center overflow-hidden">
+          class="bg-black w-[60px] lg:w-36 xl:w-[204px] h-[60px] lg:h-36 xl:h-[204px] p-[3px] lg:p-2 xl:p-3 m-px rounded-xl lg:rounded-3xl xl:rounded-[42px] flex items-center justify-center overflow-hidden">
           <img src="./src/assets/icon/partners-3.png" alt="Logo" class=" w-full" />
         </div>
       </div>
-      <div class="p-px rounded-[42px] bg-gradient-to-br from-[rgba(255,255,255,0.77)] to-[rgba(255,255,255,0.05)]">
+      <div
+        class="p-px rounded-xl lg:rounded-3xl xl:rounded-[42px] bg-gradient-to-br from-[rgba(255,255,255,0.77)] to-[rgba(255,255,255,0.05)]">
         <div
-          class="bg-black w-[204px] h-[204px] p-3 m-px rounded-[42px] flex items-center justify-center overflow-hidden">
+          class="bg-black w-[60px] lg:w-36 xl:w-[204px] h-[60px] lg:h-36 xl:h-[204px] p-[3px] lg:p-2 xl:p-3 m-px rounded-xl lg:rounded-3xl xl:rounded-[42px] flex items-center justify-center overflow-hidden">
           <img src="./src/assets/icon/partners-4.png" alt="Logo" class=" w-full" />
         </div>
       </div>
     </div>
-    <div class="container flex gap-16 mt-[120px]">
-      <div class="w-1/2 bg-gradient-custom border border-[#8392A6] backdrop-blur-[17px] rounded-3xl p-10 relative">
-        <div class="absolute -top-[60px] left-10">
-          <img src="./src/assets/icon/partner-icon.png" alt="icon">
-        </div>
-        <div class="flex flex-col gap-[84px]">
-          <p class="max-w-[672px] text-[32px] font-semibold leading-[38px]">“DICO Studio’s 3D animation team delivered
-            AAA-quality work beyond expectations!”</p>
-          <div class="flex items-center gap-3 justify-end">
-            <div class="w-[60px] h-[60px] bg-white rounded-full overflow-hidden">
-              <img src="./src/assets/img/manager.jpg" alt="">
+    <div class="container lg:mt-[120px]">
+      <div class="xl:flex gap-16 hidden">
+        <div class="w-1/2 bg-gradient-custom border border-[#8392A6] backdrop-blur-[17px] rounded-3xl p-10 relative">
+          <div class="absolute -top-[60px] left-10">
+            <img src="./src/assets/icon/partner-icon.png" alt="icon">
+          </div>
+          <div class="flex flex-col gap-[84px]">
+            <p class="max-w-[672px] text-[32px] font-semibold leading-[38px]">“DICO Studio’s 3D animation team delivered
+              AAA-quality work beyond expectations!”</p>
+            <div class="flex items-center gap-3 justify-end">
+              <div class="w-[60px] h-[60px] bg-white rounded-full overflow-hidden">
+                <img src="./src/assets/img/manager.jpg" alt="">
+              </div>
+              <span class="text-[28px] leading-[100%] font-semibold pr-6">Outsourcing Manager</span>
             </div>
-            <span class="text-[28px] leading-[100%] font-semibold pr-6">Outsourcing Manager</span>
+          </div>
+        </div>
+        <div class="w-1/2 bg-gradient-custom border border-[#8392A6] backdrop-blur-[17px] rounded-3xl p-10 relative">
+          <div class="absolute -top-[60px] left-10">
+            <img src="./src/assets/icon/partner-icon.png" alt="icon">
+          </div>
+          <div class="flex flex-col gap-[84px]">
+            <p class="max-w-[672px] text-[32px] font-semibold leading-[38px]">“Their co-development
+              expertise made our
+              launch seamless. Highly recommended!”</p>
+            <div class="flex items-center gap-3 justify-end">
+              <div class="w-[60px] h-[60px] bg-white rounded-full overflow-hidden">
+                <img src="./src/assets/img/manager.jpg" alt="">
+              </div>
+              <span class="text-xs sm:text-xl lg:text-[28px] leading-[100%] font-semibold pr-6">Outsourcing
+                Manager</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="w-1/2 bg-gradient-custom border border-[#8392A6] backdrop-blur-[17px] rounded-3xl p-10 relative">
-        <div class="absolute -top-[60px] left-10">
-          <img src="./src/assets/icon/partner-icon.png" alt="icon">
-        </div>
-        <div class="flex flex-col gap-[84px]">
-          <p class="max-w-[672px] text-[32px] font-semibold leading-[38px]">“Their co-development expertise made our
-            launch seamless. Highly recommended!”</p>
-          <div class="flex items-center gap-3 justify-end">
-            <div class="w-[60px] h-[60px] bg-white rounded-full overflow-hidden">
-              <img src="./src/assets/img/manager.jpg" alt="">
+      <div class="xl:hidden">
+        <div class="swiper partnersSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="w-full bg-gradient-custom border border-[#8392A6] backdrop-blur-[17px] rounded-[10px] lg:rounded-3xl  p-4 lg:p-10 relative mt-20 mb-11">
+                <div class="absolute -top-7 lg:-top-[60px] left-4 lg:left-10">
+                  <img class="w-[42px] lg:w-auto" src="./src/assets/icon/partner-icon.png" alt="icon">
+                </div>
+                <div class="flex flex-col gap-[84px]">
+                  <p
+                    class="max-w-[672px] text-sm sm:text-lg md:text-2xl xl:text-[32px] font-semibold xl:leading-[38px]">
+                    “DICO
+                    Studio’s 3D animation team
+                    delivered
+                    AAA-quality work beyond expectations!”</p>
+                  <div class="flex items-center gap-3 justify-end">
+                    <div class="w-6 lg:w-[60px] h-6 lg:h-[60px] bg-white rounded-full overflow-hidden">
+                      <img src="./src/assets/img/manager.jpg" alt="">
+                    </div>
+                    <span class="text-xs sm:text-xl lg:text-[28px] leading-[100%] font-semibold pr-6">Outsourcing
+                      Manager</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <span class="text-[28px] leading-[100%] font-semibold pr-6">Outsourcing Manager</span>
+            <div class="swiper-slide">
+              <div
+                class="w-full bg-gradient-custom border border-[#8392A6] backdrop-blur-[17px] rounded-[10px] lg:rounded-3xl p-4 lg:p-10 relative mt-20 mb-11">
+                <div class="absolute -top-7 lg:-top-[60px] left-4 lg:left-10">
+                  <img class="w-[42px] lg:w-auto" src="./src/assets/icon/partner-icon.png" alt="icon">
+                </div>
+                <div class="flex flex-col gap-[84px]">
+                  <p
+                    class="max-w-[672px] text-sm sm:text-lg md:text-2xl xl:text-[32px] font-semibold xl:leading-[38px]">
+                    “Their
+                    co-development expertise made
+                    our
+                    launch seamless. Highly recommended!”</p>
+                  <div class="flex items-center gap-3 justify-end">
+                    <div class="w-6 lg:w-[60px] h-6 lg:h-[60px] bg-white rounded-full overflow-hidden">
+                      <img src="./src/assets/img/manager.jpg" alt="">
+                    </div>
+                    <span class="text-xs sm:text-xl lg:text-[28px] leading-[100%] font-semibold pr-6">Outsourcing
+                      Manager</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Game's we've worked on -->
-  <section class="py-[166px] relative">
-    <div class="absolute -top-[51px] left-0 w-[746px] h-[369px] bg-[#C6E066]/12 blur-[200px]"></div>
-    <h2>Game's we've worked on</h2>
-    <div class="flex items-center justify-center gap-[86px] mt-24">
-      <div>
-        <img src="./src/assets/icon/game-news-1.png" alt="game-news Logo">
-      </div>
-      <div>
-        <img src="./src/assets/icon/game-news-2.png" alt="game-news Logo">
-      </div>
-      <div>
-        <img src="./src/assets/icon/game-news-3.png" alt="game-news Logo">
-      </div>
-      <div>
-        <img src="./src/assets/icon/game-news-4.png" alt="game-news Logo">
-      </div>
-      <div>
-        <img src="./src/assets/icon/game-news-5.png" alt="game-news Logo">
-      </div>
-      <div>
-        <img src="./src/assets/icon/game-news-6.png" alt="game-news Logo">
+  <section class="py-[54px] lg:py-[166px] overflow-hidden relative">
+    <div class="absolute -top-[51px] left-0 w-[746px] h-[369px] bg-[#C6E066]/12 blur-[200px] z-10"></div>
+    <h2>Games we've worked on</h2>
+    <!-- Marquee container -->
+    <div class="w-full overflow-hidden relative z-10 mt-8 lg:mt-24">
+      <div class="flex whitespace-nowrap animate-marquee">
+        <!-- Logo set: Repeat twice -->
+        <div class="flex">
+          <!-- Use responsive width: md:w-[33.3333vw] for 3 items, lg:w-[16.6667vw] for 6 items -->
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-1.png" alt="Game 1">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-2.png" alt="Game 2">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-3.png" alt="Game 3">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-4.png" alt="Game 4">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-5.png" alt="Game 5">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-6.png" alt="Game 6">
+          </div>
+        </div>
+
+        <!-- Duplicate set for smooth loop -->
+        <div class="flex">
+          <!-- Use responsive width: md:w-[33.3333vw] for 3 items, lg:w-[16.6667vw] for 6 items -->
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-1.png" alt="Game 1">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-2.png" alt="Game 2">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-3.png" alt="Game 3">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-4.png" alt="Game 4">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-5.png" alt="Game 5">
+          </div>
+          <div class="w-[25vw] lg:w-[16.6667vw] flex justify-center items-center px-3 md:px-5 lg:px-7 xl:px-[43px]">
+            <img class="w-auto" src="./src/assets/icon/game-news-6.png" alt="Game 6">
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Marquee animation -->
+    <style>
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .animate-marquee {
+        animation: marquee 30s linear infinite;
+      }
+    </style>
   </section>
 
+
+
+
   <!-- Why Partner with Dico Studio? -->
-  <section class="bg-center bg-cover bg-no-repeat pt-[260px] mb-[200px] relative">
+  <section class="bg-center bg-cover bg-no-repeat pt-8 lg:pt-[200px] mb-8 lg:mb-[200px] relative">
     <div class="absolute top-0 left-0 right-0">
       <img src="./src/assets/icon/partner-bg-2.png" alt="">
     </div>
@@ -292,59 +411,84 @@
     <div class="absolute top-0 left-0 right-0 h-[369px] bg-[#E066C6]/16 blur-[350px] z-20"></div>
     <h2 class="">Why Partner with Dico Studio?</h2>
     <div class="container">
-      <div class=" mt-24 p-[54px] border-[12px] border-[#77C4FF] rounded-[50px] mx-12">
-        <div class="flex flex-wrap items-center gap-8">
-          <div class="bg-gradient-to-br bg-[#2C2D35]  rounded-3xl flex items-center gap-6 p-8 relative z-10">
-            <div
-              class="relative w-[42px] h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
-              <div class="absolute bottom-0 right-0">
-                <img src="./src/assets/icon/shadow-check.png" alt="">
-              </div>
-              <img class="relative z-10" src="./src/assets/icon/Vector.svg" alt="">
-            </div>
-            <span class="text-[28px] font-semibold leading-[100%]">Flexible Pricing</span>
-          </div>
-          <div class="bg-gradient-to-br bg-[#2C2D35]  rounded-3xl flex items-center gap-6 p-8 relative z-10">
-            <div
-              class="relative w-[42px] h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
-              <div class="absolute bottom-0 right-0">
-                <img src="./src/assets/icon/shadow-check.png" alt="">
-              </div>
-              <img class="relative z-10" src="./src/assets/icon/Vector.svg" alt="">
-            </div>
-            <span class="text-[28px] font-semibold leading-[100%] pr-2.5">13+ Years of industry Experience</span>
-          </div>
-          <div class="bg-gradient-to-br bg-[#2C2D35]  rounded-3xl flex items-center gap-6 p-8 relative z-10">
-            <div
-              class="relative w-[42px] h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
-              <div class="absolute bottom-0 right-0">
-                <img src="./src/assets/icon/shadow-check.png" alt="">
-              </div>
-              <img class="relative z-10" src="./src/assets/icon/Vector.svg" alt="">
-            </div>
-            <span class="text-[28px] font-semibold leading-[100%]">Seamless Integration </span>
-          </div>
+      <div class="lg:mx-12 mt-6 lg:mt-24 relative">
+        <div
+          class="absolute top-0 left-0 right-0 bottom-0 bg-[#77C4FF]/4 inset-shadow-md-partner rounded-4xl lg:rounded-[60px]">
         </div>
-        <div class="flex flex-wrap items-center gap-8 mt-8">
-          <div class="bg-gradient-to-br bg-[#2C2D35]  rounded-3xl flex items-center gap-6 p-8 relative z-10">
-            <div
-              class="relative w-[42px] h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
-              <div class="absolute bottom-0 right-0">
-                <img src="./src/assets/icon/shadow-check.png" alt="">
+        <div class="border-green border-2 lg:border-[12px] rounded-4xl lg:rounded-[64px]">
+          <div class="p-4 lg:p-[42px] border-2 lg:border-[12px] border-sky rounded-4xl lg:rounded-[50px]">
+            <div class="flex flex-wrap items-center gap-8 ">
+              <div class="w-full lg:w-auto border-bg-white rounded-xl lg:rounded-4xl">
+                <div
+                  class=" bg-white/12 border border-white/12 rounded-lg lg:rounded-3xl flex items-center gap-2 lg:gap-6 px-2.5 lg:px-8 py-3 lg:py-8 relative ">
+                  <div
+                    class="relative w-4 lg:w-[42px] h-4 lg:h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
+                    <div class="absolute bottom-0 right-0">
+                      <img class="w-3 lg:w-8" src="./src/assets/icon/shadow-check.png" alt="">
+                    </div>
+                    <img class="w-[9px] lg:w-6 relative z-10" src="./src/assets/icon/Vector.svg" alt="">
+                  </div>
+                  <span class="text-xs lg:text-[28px] font-semibold leading-[100%]">Flexible Pricing</span>
+                </div>
               </div>
-              <img class="relative z-10" src="./src/assets/icon/Vector.svg" alt="">
-            </div>
-            <span class="text-[28px] font-semibold leading-[100%]">Dedicated Art Manager for every Project </span>
-          </div>
-          <div class="bg-gradient-to-br bg-[#2C2D35]  rounded-3xl flex items-center gap-6 p-8 relative z-10">
-            <div
-              class="relative w-[42px] h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
-              <div class="absolute bottom-0 right-0">
-                <img src="./src/assets/icon/shadow-check.png" alt="">
+              <div class="w-full lg:w-auto border-bg-white rounded-xl lg:rounded-4xl">
+                <div
+                  class=" bg-white/12 border border-white/12 rounded-lg lg:rounded-3xl flex items-center gap-2 lg:gap-6 px-2.5 lg:px-8 py-3 lg:py-8 relative ">
+                  <div
+                    class="relative w-4 lg:w-[42px] h-4 lg:h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
+                    <div class="absolute bottom-0 right-0">
+                      <img class="w-3 lg:w-8" src="./src/assets/icon/shadow-check.png" alt="">
+                    </div>
+                    <img class="w-[9px] lg:w-6 relative z-10" src="./src/assets/icon/Vector.svg" alt="">
+                  </div>
+                  <span class="text-xs lg:text-[28px] font-semibold leading-[100%]">13+ Years of industry
+                    Experience</span>
+                </div>
               </div>
-              <img class="relative z-10" src="./src/assets/icon/Vector.svg" alt="">
+              <div class="w-full lg:w-auto border-bg-white rounded-xl lg:rounded-4xl">
+                <div
+                  class=" bg-white/12 border border-white/12 rounded-lg lg:rounded-3xl flex items-center gap-2 lg:gap-6 px-2.5 lg:px-8 py-3 lg:py-8 relative ">
+                  <div
+                    class="relative w-4 lg:w-[42px] h-4 lg:h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
+                    <div class="absolute bottom-0 right-0">
+                      <img class="w-3 lg:w-8" src="./src/assets/icon/shadow-check.png" alt="">
+                    </div>
+                    <img class="w-[9px] lg:w-6 relative z-10" src="./src/assets/icon/Vector.svg" alt="">
+                  </div>
+                  <span class="text-xs lg:text-[28px] font-semibold leading-[100%]">Flexible Pricing</span>
+                </div>
+              </div>
             </div>
-            <span class="text-[28px] font-semibold leading-[100%] pr-5">27+ Specialized 3D Artists & Animators </span>
+            <div class="flex flex-wrap items-center gap-8 mt-8">
+              <div class="w-full lg:w-auto border-bg-white rounded-xl lg:rounded-4xl">
+                <div
+                  class=" bg-white/12 border border-white/12 rounded-lg lg:rounded-3xl flex items-center gap-2 lg:gap-6 px-2.5 lg:px-8 py-3 lg:py-8 relative ">
+                  <div
+                    class="relative w-4 lg:w-[42px] h-4 lg:h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
+                    <div class="absolute bottom-0 right-0">
+                      <img class="w-3 lg:w-8" src="./src/assets/icon/shadow-check.png" alt="">
+                    </div>
+                    <img class="w-[9px] lg:w-6 relative z-10" src="./src/assets/icon/Vector.svg" alt="">
+                  </div>
+                  <span class="text-xs lg:text-[28px] font-semibold leading-[100%]">Dedicated Art Manager for every
+                    Project</span>
+                </div>
+              </div>
+              <div class="w-full lg:w-auto border-bg-white rounded-xl lg:rounded-4xl">
+                <div
+                  class=" bg-white/12 border border-white/12 rounded-lg lg:rounded-3xl flex items-center gap-2 lg:gap-6 px-2.5 lg:px-8 py-3 lg:py-8 relative ">
+                  <div
+                    class="relative w-4 lg:w-[42px] h-4 lg:h-[42px] bg-[#77CC00] rounded-full overflow-hidden flex items-center justify-center">
+                    <div class="absolute bottom-0 right-0">
+                      <img class="w-3 lg:w-8" src="./src/assets/icon/shadow-check.png" alt="">
+                    </div>
+                    <img class="w-[9px] lg:w-6 relative z-10" src="./src/assets/icon/Vector.svg" alt="">
+                  </div>
+                  <span class="text-xs lg:text-[28px] font-semibold leading-[100%]">27+ Specialized 3D Artists &
+                    Animators</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -354,56 +498,67 @@
   <!-- Outsourcing services -->
   <section class="bg-center bg-cover bg-no-repeat relative"
     style="background-image: url(./src/assets/img/service-bg.jpg);">
-    <div class="shadow-3 h-full blur-2xl"></div>
+    <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-dark"></div>
     <div class="container relative z-10">
-      <div class="py-[129px] px-12">
+      <div class="py-8 lg:py-[129px] 2xl:px-12">
         <h2>Outsourcing services</h2>
-        <div class="mt-24 rounded-[42px] border-4 border-white/10 bg-[#0F0F0F] overflow-hidden">
-          <div class="pt-16 pb-[61px] bg-[#212121]">
-            <p class="max-w-[975px] text-[28px] font-semibold leading-9 mx-auto text-center">We deliver
-              high-quality, scalable
-              game art
-              and development solutions for indie game
-              developers and AAA game studios</p>
-          </div>
-          <div class="mt-[46px] flex gap-[42px] pl-[54px] pr-10 ">
-            <div class="w-[44.789%]">
-              <div
-                class="border-2 border-white/20 bg-white/8 p-8 w-full flex items-center gap-6 rounded-3xl hover:border-2 hover:border-white hover:bg-white/16 transition-all duration-500 mb-8">
-                <div
-                  class="w-[102px] h-[102px] bg-white/16 border border-white/20 flex items-center justify-center rounded-full">
-                  <img src="./src/assets/img/game-1.svg" alt="">
-                </div>
-                <span class="text-[32px] font-semibold">3D Art & Animation</span>
-              </div>
-              <div
-                class="border-2 border-white/20 bg-white/8 p-8 w-full flex items-center gap-6 rounded-3xl hover:border-2 hover:border-white hover:bg-white/16 transition-all duration-500 mb-8">
-                <div
-                  class="w-[102px] h-[102px] bg-white/16 border border-white/20 flex items-center justify-center rounded-full">
-                  <img src="./src/assets/img/game-2.svg" alt="">
-                </div>
-                <span class="text-[32px] font-semibold">3D Art & Animation</span>
-              </div>
-              <div
-                class="border-2 border-white/20 bg-white/8 p-8 w-full flex items-center gap-6 rounded-3xl hover:border-2 hover:border-white hover:bg-white/16 transition-all duration-500 mb-8">
-                <div
-                  class="w-[102px] h-[102px] bg-white/16 border border-white/20 flex items-center justify-center rounded-full">
-                  <img src="./src/assets/img/game-3.svg" alt="">
-                </div>
-                <span class="text-[32px] font-semibold">3D Art & Animation</span>
-              </div>
+        <div class="mt-8 lg:mt-24 border-gray-dark rounded-[36px] lg:rounded-[50px] relative">
+          <div class="rounded-[28px] lg:rounded-[42px] bg-[#0F0F0F] overflow-hidden">
+            <div class="absolute top-0 left-0 right-0 bottom-0 drop-shadow-3xl"></div>
+            <div class="pt-7 lg:pt-16 pb-[25px] lg:pb-[61px] bg-[#212121]">
+              <p
+                class="max-w-[975px] text-base md:text-xl lg:text-[28px] font-semibold lg:leading-9 mx-6 lg:mx-auto text-center">
+                We
+                deliver
+                high-quality, scalable
+                game art
+                and development solutions for indie game
+                developers and AAA game studios</p>
             </div>
-            <div class="w-[52.388%]">
-              <div class="overflow-hidden rounded-[36px] bg-transparent">
-                <img src="./src/assets/img/3d-art-animation.jpg" alt="3d-art-animation">
+            <div
+              class="mt-[46px] pb-[42px] flex flex-col md:flex-row gap-[42px] pl-6 xl:pl-[54px] pr-6 xl:pr-10 relative z-20">
+              <div class="w-full md:w-[44.789%]">
+                <a href="#"
+                  class="border-2 border-white/20 bg-white/8 px-2 2xl:px-8 py-3 2xl:py-8 w-full flex items-center gap-2 lg:gap-4 xl:gap-6 rounded-3xl hover:border-2 hover:border-white hover:bg-white/16 transition-all duration-500 mb-8">
+                  <div
+                    class="w-7 lg:w-16 xl:w-[102px] h-7 lg:h-16 xl:h-[102px] bg-white/16 border border-white/20 flex items-center justify-center rounded-full">
+                    <img class="w-3.5 lg:w-7 xl:w-auto" src="./src/assets/img/game-1.svg" alt="">
+                  </div>
+                  <h3>3D Art & Animation</h3>
+                </a>
+                <a href="#"
+                  class="border-2 border-white/20 bg-white/8 px-2 2xl:px-8 py-3 2xl:py-8 w-full flex items-center gap-2 lg:gap-4 xl:gap-6 rounded-3xl hover:border-2 hover:border-white hover:bg-white/16 transition-all duration-500 mb-8">
+                  <div
+                    class="w-7 lg:w-16 xl:w-[102px] h-7 lg:h-16 xl:h-[102px] bg-white/16 border border-white/20 flex items-center justify-center rounded-full">
+                    <img class="w-3.5 lg:w-7 xl:w-auto" src="./src/assets/img/game-2.svg" alt="">
+                  </div>
+                  <h3>Concept Art & 2D Game Art</h3>
+                </a>
+                <a href="#"
+                  class="border-2 border-white/20 bg-white/8 px-2 2xl:px-8 py-3 2xl:py-8 w-full flex items-center gap-2 lg:gap-4 xl:gap-6 rounded-3xl hover:border-2 hover:border-white hover:bg-white/16 transition-all duration-500 mb-8">
+                  <div
+                    class="w-7 lg:w-16 xl:w-[102px] h-7 lg:h-16 xl:h-[102px] bg-white/16 border border-white/20 flex items-center justify-center rounded-full">
+                    <img class="w-3.5 lg:w-7 xl:w-auto" src="./src/assets/img/game-3.svg" alt="">
+                  </div>
+                  <h3>Full Game Development</h3>
+                </a>
               </div>
-              <div class="mt-[42px]">
-                <span class="text-[54px] font-semibold">3D Art & Animation</span>
-                <p>Deliver immersive gameplay with AAA-quality 3D character modelling, richly detailed environments, and
-                  optimizes game assets & prompt.</p>
-                <p>
-                  Crafted by our industry-leading artist for sealess integration into your pipeline.</p>
-                <button class="btn">Learn More</button>
+              <div class="w-full md:w-[52.388%]">
+                <div class="overflow-hidden rounded-[36px] bg-transparent">
+                  <img src="./src/assets/img/3d-art-animation.jpg" alt="3d-art-animation">
+                </div>
+                <div class="mt-[42px] text-center md:text-start">
+                  <span class=" lg:text-4xl xl:text-[54px] font-semibold leading-14">3D Art & Animation</span>
+                  <p class="mt-4 text-xs lg:text-xl lg:leading-8">Deliver immersive gameplay with AAA-quality 3D
+                    character
+                    modelling,
+                    richly
+                    detailed environments, and
+                    optimizes game assets & prompt.</p>
+                  <p class="mt-2 text-xs lg:text-xl lg:leading-8">
+                    Crafted by our industry-leading artist for sealess integration into your pipeline.</p>
+                  <button class="mt-6 btn">Learn More</button>
+                </div>
               </div>
             </div>
           </div>
@@ -412,7 +567,660 @@
     </div>
   </section>
 
+  <!-- Featured work -->
+  <section class="container my-[54px] lg:my-[120px]">
+    <h2>Featured work</h2>
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-16 mt-8 lg:mt-24">
+      <a href="#" class="border-yellow p-4">
+        <div class="bg-black rounded-[42px] overflow-hidden">
+          <img class="w-full h-[360px] object-cover object-left" src="./src/assets/img/featured-image-1.jpg" alt="">
+        </div>
+        <div class="mt-[42px] mb-[32px] text-center">
+          <h3>Bloodstained</h3>
+          <p class="text-lg leading-6 mt-4">3D Character Modelling & Animation</p>
+        </div>
+      </a>
+      <a href="#" class="border-sky p-4">
+        <div class="bg-black rounded-[42px] overflow-hidden">
+          <img class="w-full h-[360px] object-cover object-left" src="./src/assets/img/featured-image-2.jpg" alt="">
+        </div>
+        <div class="mt-[42px] mb-[32px] text-center">
+          <h3>Octopath Traveler</h3>
+          <p class="text-lg leading-6 mt-4">3D Environment Modeling</p>
+        </div>
+      </a>
+      <a href="#" class="border-orange p-4">
+        <div class="bg-black rounded-[42px] overflow-hidden">
+          <img class="w-full h-[360px] object-cover object-left" src="./src/assets/img/featured-image-3.jpg" alt="">
+        </div>
+        <div class="mt-[42px] mb-[32px] text-center">
+          <h3>Gleamlight</h3>
+          <p class="text-lg leading-6 mt-4">Full-Cycle Game Development</p>
+        </div>
+      </a>
+      <a href="#" class="border-yellow p-4">
+        <div class="bg-black rounded-[42px] overflow-hidden">
+          <img class="w-full h-[360px] object-cover object-left" src="./src/assets/img/featured-image-4.jpg" alt="">
+        </div>
+        <div class="mt-[42px] mb-[32px] text-center">
+          <h3>Bloodstained</h3>
+          <p class="text-lg leading-6 mt-4">3D Character Modelling & Animation</p>
+        </div>
+      </a>
+      <a href="#" class="border-sky p-4">
+        <div class="bg-black rounded-[42px] overflow-hidden">
+          <img class="w-full h-[360px] object-cover object-left" src="./src/assets/img/featured-image-5.jpg" alt="">
+        </div>
+        <div class="mt-[42px] mb-[32px] text-center">
+          <h3>Octopath Traveler</h3>
+          <p class="text-lg leading-6 mt-4">3D Environment Modeling</p>
+        </div>
+      </a>
+      <a href="#" class="border-orange p-4">
+        <div class="bg-black rounded-[42px] overflow-hidden">
+          <img class="w-full h-[360px] object-cover object-left" src="./src/assets/img/featured-image-6.jpg" alt="">
+        </div>
+        <div class="mt-[42px] mb-[32px] text-center">
+          <h3>Gleamlight</h3>
+          <p class="text-lg leading-6 mt-4">Full-Cycle Game Development</p>
+        </div>
+      </a>
+    </div>
+    <div class="flex items-center justify-center mt-8 lg:mt-24">
+      <button class="btn">View full portfolio</button>
+    </div>
+  </section>
 
+  <!-- About Dico Studios -->
+  <section class="bg-center bg-cover bg-no-repeat py-[54px] lg:py-[120px]"
+    style="background-image: url(./src/assets/icon/about-bg.png);">
+    <div class="container">
+      <h2>About Dico Studios</h2>
+      <div class="2xl:px-[65px] flex flex-col xl:flex-row gap-10 2xl:gap-[83px] mt-8 lg:mt-24">
+        <div class="w-full xl:w-[42.259%] text-center xl:text-start order-2 xl:order-1">
+          <p class="text-lg md:text-2xl lg:text-3xl xl:text-[42px] xl:leading-12 mb-8 lg:mb-[84px] ">At Dico Studio, our
+            success
+            is powered by a
+            highly
+            skilled
+            team of game
+            developers, 3D
+            artists, animators,
+            and project managers with deep expertise across multiple platforms and genres.</p>
+          <h3 class="text-base lg:text-xl xl:text-[32px]">About Dico Studios:</h3>
+          <div class="mt-3 lg:mt-6 flex text-start  justify-center xl:justify-start gap-4">
+            <div class="xl:w-[180px]">
+              <div class="mb-2"><img src="./src/assets/icon/english.png" alt=""></div>
+              <h3>English</h3>
+            </div>
+            <div class="xl:w-[180px]">
+              <div class="mb-2"><img src="./src/assets/icon/spanish.png" alt=""></div>
+              <h3>Spanish</h3>
+            </div>
+            <div class="xl:w-[180px]">
+              <div class="mb-2"><img src="./src/assets/icon/japanese.png" alt=""></div>
+              <h3>Japanese</h3>
+            </div>
+          </div>
+          <button class="btn mt-8 lg:mt-[84px]">Read more</button>
+        </div>
+        <div class="w-full xl:w-[52.388%] order-1 xl:order-2">
+          <div class="flex gap-2.5 lg:gap-6">
+            <div class="w-1/2 border-bg-white bg-white/12 p-1.5 lg:p-4 ">
+              <div class="rounded-4xl overflow-hidden">
+                <img class="h-full lg:h-[328px]" src="./src/assets/img/about-dico-1.jpg" alt="about-dico">
+              </div>
+            </div>
+            <div class="lg:hidden w-1/2 border-bg-white bg-white/12 p-1.5 lg:p-4 ">
+              <div class="rounded-4xl overflow-hidden">
+                <img class="h-full lg:h-[328px]" src="./src/assets/img/about-dico-1.jpg" alt="about-dico">
+              </div>
+            </div>
+            <div class="hidden lg:block w-1/2 border-bg-white bg-white/12 p-1.5 lg:p-4 ">
+              <div class="border-bg-white rounded-4xl p-4 overflow-hidden">
+                <div class="rounded-[22px] overflow-hidden">
+                  <img class="h-full lg:h-[296px] object-cover" src="./src/assets/img/about-dico-2.jpg"
+                    alt="about-dico">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2.5 lg:mt-6 border-bg-white bg-white/12 p-1.5 lg:p-4 rounded-3xl">
+            <div class="rounded-[22px] overflow-hidden">
+              <img class="w-full h-full lg:h-[328px] object-cover " src="./src/assets/img/about-dico-3.jpg"
+                alt="about-dico">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Team Members -->
+  <section class="pt-[54px] mb-[54px] lg:mb-[214px]">
+    <div class="container">
+      <h2>Key Team Members</h2>
+      <div class="mt-8 lg:mt-24 grid md:grid-cols-2 xl:grid-cols-3 gap-10 2xl:gap-16">
+        <div class="border-gray-orange gap-4 lg:gap-8 p-4 lg:p-8">
+          <div>
+            <img class="w-full" src="./src/assets/img/team-members-1.png" alt="team-members">
+          </div>
+          <div class="mt-[42px]">
+            <span class="text-secondary">CEO</span>
+            <h3 class="mt-1">Emillio Gallego</h3>
+            <p class="leading-6 mt-4"> Co-founder of DICO and CEO since December 2020, Emilio has extensive experience
+              in the entertainment industry. Former Globalisation Director and Unit Leader at GRE, he helped localize
+              Japanese titles for Nintendo of Europe. Emilio focuses on building innovative teams and a positive
+              corporate culture.</p>
+          </div>
+        </div>
+        <div class="border-gray-orange gap-4 lg:gap-8 p-4 lg:p-8">
+          <div>
+            <img class="w-full" src="./src/assets/img/team-members-2.png" alt="team-members">
+          </div>
+          <div class="mt-[42px]">
+            <span class="text-secondary">Managing Director</span>
+            <h3 class="mt-1">Matias Sanchez</h3>
+            <p class="leading-6 mt-4">Matias is an experienced executive with a background in leading operations and
+              business management within the gaming industry. As Managing Director at DICO, he focuses on driving
+              company growth, operational efficiency, and strategic partnerships.</p>
+          </div>
+        </div>
+        <div class="border-gray-orange gap-4 lg:gap-8 p-4 lg:p-8">
+          <div>
+            <img class="w-full" src="./src/assets/img/team-members-3.png" alt="team-members">
+          </div>
+          <div class="mt-[42px]">
+            <span class="text-secondary">Business Development & Senior PM</span>
+            <h3 class="mt-1">Ziya Sarper Ekim</h3>
+            <p class="leading-6 mt-4"> Ziya is responsible for developing new business opportunities and overseeing
+              senior project management. With extensive experience in the entertainment sector, Ziya excels in driving
+              innovation and managing projects from ideation to completion.</p>
+          </div>
+        </div>
+        <div class="border-gray-orange gap-4 lg:gap-8 p-4 lg:p-8">
+          <div>
+            <img class="w-full" src="./src/assets/img/team-members-4.png" alt="team-members">
+          </div>
+          <div class="mt-[42px]">
+            <span class="text-secondary">Technical Artist</span>
+            <h3 class="mt-1">Alberto Guerrero Cobos</h3>
+            <p class="leading-6 mt-4">Alberto bridges the gap between art and technology. With his deep understanding of
+              both areas, he enhances visual quality while ensuring optimal performance within the game's technical
+              constraints.</p>
+          </div>
+        </div>
+        <div class="border-gray-orange gap-4 lg:gap-8 p-4 lg:p-8">
+          <div>
+            <img class="w-full" src="./src/assets/img/team-members-5.png" alt="team-members">
+          </div>
+          <div class="mt-[42px]">
+            <span class="text-secondary">Publishing Manager</span>
+            <h3 class="mt-1">Jose A. Gallego Valero</h3>
+            <p class="leading-6 mt-4">Jose leads the publishing team at DICO, bringing strategic and operational
+              oversight to the successful release of client games. His expertise spans the full publishing pipeline,
+              from production to platform launch, ensuring visibility and commercial success.</p>
+          </div>
+        </div>
+        <div class="border-gray-orange gap-4 lg:gap-8 p-4 lg:p-8">
+          <div>
+            <img class="w-full" src="./src/assets/img/team-members-6.png" alt="team-members">
+          </div>
+          <div class="mt-[42px]">
+            <span class="text-secondary">Art Director</span>
+            <h3 class="mt-1">Julio Velasco</h3>
+            <p class="leading-6 mt-4">An Emmy award-winning animator, Julio is known for his work on Lost in Oz:
+              Extended Adventure. As Art Director at DICO, he is responsible for shaping the artistic vision of
+              projects, ensuring creative excellence, and leading the team to achieve visually stunning outcomes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-8 lg:mt-24">
+        <button class="btn">Learn about Dico</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Development Pipeline -->
+  <section class="pt-[54px] lg:pt-[120px] relative overflow-hidden">
+    <div class="w-[746px] h-[369px] bg-[#66C6E0]/16 blur-[250px] absolute top-0 -left-[250px]"></div>
+    <div class="w-[456px] h-[369px] bg-[#EBFFA3]/20 blur-[250px] absolute bottom-0 right-0"></div>
+    <span class="text-2xl font-semibold text-secondary block text-center">How to work</span>
+    <div class="swiper developSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2 class="mt-4">Development Pipeline</h2>
+          <div class="py-[42px] lg:py-24">
+            <div class="relative">
+              <span class="w-full h-3 bg-[#77C4FF]/20 block mt-12 relative z-20"></span>
+              <div class="hidden absolute -top-9 lg:-top-16 left-4 sm:flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full border-[3px] border-secondary flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/discovery.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Discovery</span>
+              </div>
+              <div class="absolute -top-9 lg:-top-16 left-[62px] sm:left-[46%] flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full border-[3px] border-secondary flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/code.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Development</span>
+              </div>
+              <div class="absolute -top-9 lg:-top-16 -right-[66px] sm:right-4 flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/optimization.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Optimization</span>
+              </div>
+            </div>
+            <div class="mt-[156px] lg:mt-[234px] flex items-center justify-center px-5">
+              <div class="bg-gradient-custom border border-[#8392A6] p-8 text-center rounded-3xl">
+                <h3>Discovery & Planning</h3>
+                <p class="leading-6 mt-4">Understanding vision, goals, and technical requirements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <h2 class="mt-4">Development Pipeline</h2>
+          <div class="py-[42px] lg:py-24">
+            <div class="relative">
+              <span class="w-full h-3 bg-[#77C4FF]/20 block mt-12 relative z-20"></span>
+              <div class="hidden absolute -top-9 lg:-top-16 left-4 sm:flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full border-[3px] border-secondary flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/discovery.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Discovery</span>
+              </div>
+              <div class="absolute -top-9 lg:-top-16 left-[62px] sm:left-[46%] flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full border-[3px] border-secondary flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/code.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Development</span>
+              </div>
+              <div class="absolute -top-9 lg:-top-16 -right-[66px] sm:right-4 flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/optimization.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Optimization</span>
+              </div>
+            </div>
+            <div class="mt-[156px] lg:mt-[234px] flex items-center justify-center px-5">
+              <div class="bg-gradient-custom border border-[#8392A6] p-8 text-center rounded-3xl">
+                <h3>Discovery & Planning</h3>
+                <p class="leading-6 mt-4">Understanding vision, goals, and technical requirements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <h2 class="mt-4">Development Pipeline</h2>
+          <div class="py-[42px] lg:py-24">
+            <div class="relative">
+              <span class="w-full h-3 bg-[#77C4FF]/20 block mt-12 relative z-20"></span>
+              <div class="hidden absolute -top-9 lg:-top-16 left-4 sm:flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full border-[3px] border-secondary flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/discovery.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Discovery</span>
+              </div>
+              <div class="absolute -top-9 lg:-top-16 left-[62px] sm:left-[46%] flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full border-[3px] border-secondary flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/code.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Development</span>
+              </div>
+              <div class="absolute -top-9 lg:-top-16 -right-[66px] sm:right-4 flex flex-col items-center">
+                <div
+                  class="w-20 lg:w-[144px] h-20 lg:h-[144px] bg-[#061007] rounded-full flex items-center justify-center relative z-30">
+                  <img class="w-8 lg:w-auto" src="./src/assets/img/optimization.svg" alt="discovery">
+                </div>
+                <span class="text-lg lg:text-2xl font-bold leading-[100%] block mt-[37px]">Optimization</span>
+              </div>
+            </div>
+            <div class="mt-[156px] lg:mt-[234px] flex items-center justify-center px-5">
+              <div class="bg-gradient-custom border border-[#8392A6] p-8 text-center rounded-3xl">
+                <h3>Discovery & Planning</h3>
+                <p class="leading-6 mt-4">Understanding vision, goals, and technical requirements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="flex items-center justify-center mt-[42px]">
+      <button class="btn">Start your project</button>
+    </div>
+  </section>
+
+  <!-- Platforms & game engines we work with -->
+  <section class="pt-[70px] lg:pt-[300px] pb-[54px] lg:pb-[184px] relative overflow-x-hidden">
+    <div class="hidden lg:block w-[746px] h-[369px] bg-[#66C6E0]/16 blur-[110px] absolute top-[120px] -left-[250px]">
+    </div>
+    <div class="hidden lg:block w-[456px] h-[369px] bg-[#FFB6A3]/20 blur-[110px] absolute bottom-[336px] -right-24">
+    </div>
+    <div class="container ">
+      <div class="border-gray-orange rounded-[33px] lg:rounded-[100px] overflow-hidden">
+        <div class=" py-16 flex flex-col items-center gap-8 lg:gap-24 bg-white/5 inset-shadow-md">
+          <div>
+            <h2>Platforms & game engines we work with</h2>
+            <div
+              class=" grid grid-cols-2 xl:grid-cols-3 justify-center flex-wrap gap-3 lg:gap-8 mt-5 lg:mt-16 max-w-[1084px] px-5 xl:px-8">
+              <div
+                class="px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">PlayStation</h3>
+              </div>
+              <div
+                class="px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">Xbox</h3>
+              </div>
+              <div
+                class="px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">Nintendo Switch</h3>
+              </div>
+              <div
+                class="px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">PC</h3>
+              </div>
+              <div
+                class="px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">Mobile</h3>
+              </div>
+              <div
+                class="px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">Web</h3>
+              </div>
+            </div>
+          </div>
+          <div class="w-[609px] h-px bg-white/20"></div>
+          <div>
+            <h2>Game Engines supported</h2>
+            <div class="flex items-center justify-center flex-wrap gap-3 lg:gap-8 mt-5 lg:mt-16 max-w-[1084px]">
+              <div
+                class=" px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">Unity 3D</h3>
+              </div>
+              <div
+                class=" px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom order-last xl:order-none">
+                <h3 class="font-bold">Unreal Engine 4& 5</h3>
+              </div>
+
+              <div
+                class=" px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">Maya</h3>
+              </div>
+              <div
+                class=" px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom">
+                <h3 class="font-bold">3D Studio MAX</h3>
+              </div>
+              <div
+                class=" px-4 pt-2.5 lg:pt-[25px] pb-2.5 lg:pb-[26px] border border-[#8392A6] rounded-lg flex items-center justify-center bg-gradient-custom ">
+                <h3 class="font-bold">Custom Engines</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently asked questions -->
+  <section class="py-[54px] lg:py-20">
+    <h2>Frequently asked questions</h2>
+    <div class="container mt-12">
+      <div class=" 2xl:px-[200px] space-y-6">
+        <details
+          class="group border border-transparent rounded-3xl overflow-hidden bg-gradient-custom hover:border-[#8392A6] py-8">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 md:px-6">
+            <div class="w-[calc(100%-20px)] pr-4">
+              <h4>1. What game development services does DICO Studio provide?</h4>
+            </div>
+            <svg class="h-5 w-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="pl-[54px] pr-6 pt-3 lg:pt-4 text-xs md:text-base lg:text-lg lg:leading-6 text-[#8392A6]">
+            We specialize in 3D modeling, animation, co-development, optimization, and porting services for PC, console,
+            and mobile.
+          </div>
+        </details>
+        <details
+          class="group border border-transparent rounded-3xl overflow-hidden bg-gradient-custom hover:border-[#8392A6] py-8">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 md:px-6">
+            <div class="w-[calc(100%-20px)] pr-4">
+              <h4>2. What is the typical cost structure for outsourcing game development to DICO Studio?</h4>
+            </div>
+            <svg class="h-5 w-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="pl-[54px] pr-6 pt-3 lg:pt-4 text-xs md:text-base lg:text-lg lg:leading-6 text-[#8392A6]">
+            We specialize in 3D modeling, animation, co-development, optimization, and porting services for PC, console,
+            and mobile.
+          </div>
+        </details>
+        <details
+          class="group border border-transparent rounded-3xl overflow-hidden bg-gradient-custom hover:border-[#8392A6] py-8">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 md:px-6">
+            <div class="w-[calc(100%-20px)] pr-4">
+              <h4>3. What security measures are in place to protect our project's confidentiality?</h4>
+            </div>
+            <svg class="h-5 w-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="pl-[54px] pr-6 pt-3 lg:pt-4 text-xs md:text-base lg:text-lg lg:leading-6 text-[#8392A6]">
+            We specialize in 3D modeling, animation, co-development, optimization, and porting services for PC, console,
+            and mobile.
+          </div>
+        </details>
+        <details
+          class="group border border-transparent rounded-3xl overflow-hidden bg-gradient-custom hover:border-[#8392A6] py-8">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 md:px-6">
+            <div class="w-[calc(100%-20px)] pr-4">
+              <h4>4. Can I outsource 3D modeling or animation separately?</h4>
+            </div>
+            <svg class="h-5 w-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="pl-[54px] pr-6 pt-3 lg:pt-4 text-xs md:text-base lg:text-lg lg:leading-6 text-[#8392A6]">
+            We specialize in 3D modeling, animation, co-development, optimization, and porting services for PC, console,
+            and mobile.
+          </div>
+        </details>
+        <details
+          class="group border border-transparent rounded-3xl overflow-hidden bg-gradient-custom hover:border-[#8392A6] py-8">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 md:px-6">
+            <div class="w-[calc(100%-20px)] pr-4">
+              <h4>5. What platforms and engines does DICO support?</h4>
+            </div>
+            <svg class="h-5 w-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="pl-[54px] pr-6 pt-3 lg:pt-4 text-xs md:text-base lg:text-lg lg:leading-6 text-[#8392A6]">
+            We specialize in 3D modeling, animation, co-development, optimization, and porting services for PC, console,
+            and mobile.
+          </div>
+        </details>
+        <details
+          class="group border border-transparent rounded-3xl overflow-hidden bg-gradient-custom hover:border-[#8392A6] py-8">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 md:px-6">
+            <div class="w-[calc(100%-20px)] pr-4">
+              <h4>6. How do we collaborate with your team?</h4>
+            </div>
+            <svg class="h-5 w-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="pl-[54px] pr-6 pt-3 lg:pt-4 text-xs md:text-base lg:text-lg lg:leading-6 text-[#8392A6]">
+            We specialize in 3D modeling, animation, co-development, optimization, and porting services for PC, console,
+            and mobile.
+          </div>
+        </details>
+        <details
+          class="group border border-transparent rounded-3xl overflow-hidden bg-gradient-custom hover:border-[#8392A6] py-8">
+          <summary class="flex cursor-pointer list-none items-center justify-between px-3 md:px-6">
+            <div class="w-[calc(100%-20px)] pr-4">
+              <h4>7. How do we get started?</h4>
+            </div>
+            <svg class="h-5 w-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="pl-[54px] pr-6 pt-3 lg:pt-4 text-xs md:text-base lg:text-lg lg:leading-6 text-[#8392A6]">
+            We specialize in 3D modeling, animation, co-development, optimization, and porting services for PC, console,
+            and mobile.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready to Elevate your game? -->
+  <section class="bg-center bg-cover bg-no-repeat py-20 relative overflow-hidden"
+    style="background-image: url(./src/assets/icon/partner-bg.png);">
+    <div class="w-[746px] h-[369px] bg-[#66C6E0]/16 blur-[200px] absolute top-8 left-20"></div>
+    <div class="flex flex-col lg:flex-row items-center gap-[58px]">
+      <div class="order-2 lg:order-1">
+        <img src="./src/assets/img/outsourcing-game-art.png" alt="game">
+      </div>
+      <div class="order-1 lg:order-2">
+        <div class="max-w-[661px] text-center lg:text-start px-4">
+          <span
+            class="text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[86px] font-knight leading-12 2xl:leading-[100%] tracking-[4px]">Ready
+            to <br class="md:hidden"> Elevate your game?</span>
+          <p class="leading-6 mt-3 max-w-[628px]">Whether you need AAA-quality game art, expert animation, or full-scale
+            game
+            development,
+            we’ve got you
+            covered.</p>
+          <p class="leading-6 mt-3 max-w-[628px]">Let’s bring your vision to life with world-class execution and
+            cutting-edge
+            technology.
+          </p>
+          <a href="#" class="btn mt-[42px] inline-block">Start your project today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <section class="py-8 lg:py-20">
+    <div class="container">
+      <div class=" flex items-center justify-center mb-[58px]">
+        <img class="w-20 lg:w-auto h-20 lg:h-auto" src="./src/assets/icon/dico-icon.png" alt="dico-icon">
+      </div>
+      <div class="flex flex-col xl:flex-row gap-[58px] pb-[58px] border-b border-white/25">
+        <div class="rounded-3xl bg-gradient-custom flex items-end">
+          <div class="pl-6 pr-[22px] pb-24 pt-20">
+            <img src="./src/assets/icon/object.png" alt="object">
+          </div>
+        </div>
+        <div>
+          <div class="py-8 px-6 bg-gradient-custom rounded-3xl mb-[50px]">
+            <div>
+              <img src="./src/assets/icon/jp.png" alt="japanese">
+            </div>
+            <span class="text-sm md:text-base lg:text-xl font-semibold block mb-2.5">Tokyo Headquarters</span>
+            <span class="text-xs md:text-base lg:text-lg lg:leading-6 block mb-2.5">DICO Co., Ltd.</span>
+            <p class="text-xs md:text-base lg:text-lg lg:leading-6">Daini Nagasawa Bldg. 4F, 3-26-2 Higashi, Shibuya-ku,
+              Tokyo 150-0011, Japan
+            </p>
+          </div>
+          <div class="py-8 px-6 bg-gradient-custom rounded-3xl mb-[50px]">
+            <div>
+              <img src="./src/assets/icon/sp.png" alt="japanese">
+            </div>
+            <span class="text-xl font-semibold block mb-2.5">Tokyo Headquarters</span>
+            <span class="leading-6 block mb-2.5">DICO Co., Ltd.</span>
+            <p class="leading-6 flex items-center gap-2.5"> <img src="./src/assets/icon/mail.png"
+                alt=""> contact@dicogranada.com
+            </p>
+          </div>
+          <div class="py-8 px-6 bg-gradient-custom rounded-3xl">
+            <div>
+              <img src="./src/assets/icon/ger.png" alt="japanese">
+            </div>
+            <span class="text-xl font-semibold block mb-2.5">DICO Europe</span>
+            <span class="leading-6 block mb-2.5"> Frankfurt, Germany</span>
+            <p class="leading-6 flex items-center gap-2.5"> <img src="./src/assets/icon/mail.png" alt="">
+              contact@dicoeurope.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-[58px] border-b border-white/25">
+        <div class="max-w-[811px] mx-auto text-center">
+          <h3 class="">Connect with Us on Social Media
+          </h3>
+          <p class="leading-6 mt-2.5">Stay updated on our latest projects, industry insights, and career opportunities
+            by
+            following us on social media:</p>
+          <div class="flex items-center justify-center mt-[58px] gap-6">
+            <a href="#" class="w-[54px] h-[54px] bg-white rounded-full flex items-center justify-center">
+              <img src="./src/assets/icon/linkdin.svg" alt="linkdin">
+            </a>
+            <a href="#" class="w-[54px] h-[54px] bg-white rounded-full flex items-center justify-center">
+              <img src="./src/assets/icon/twitter.svg" alt="linkdin">
+            </a>
+            <a href="#" class="lg:hidden w-[54px] h-[54px] bg-white rounded-full flex items-center justify-center">
+              <img class="w-[34px]" src="./src/assets/icon/Instagram.svg" alt="linkdin">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="py-8 lg:py-[58px] border-b border-white/25">
+        <h3 class="text-center text-lg md:text-2xl lg:text-[32px]">Quick Links</h3>
+        <div class="flex flex-col lg:flex-row items-center justify-center flex-wrap gap-3 lg:gap-8 mt-6 lg:mt-[58px]">
+          <a class="text-xs sm:text-xl font-semibold leading-[100%]" href="#">About Us</a>
+          <a class="text-xs sm:text-xl font-semibold leading-[100%]" href="#">3D Art & Animation Services</a>
+          <a class="text-xs sm:text-xl font-semibold leading-[100%]" href="#">Concept Art & 2D Game Art Services</a>
+          <a class="text-xs sm:text-xl font-semibold leading-[100%]" href="#">Full Game Development & Co-Development</a>
+          <a class="text-xs sm:text-xl font-semibold leading-[100%]" href="#">Portfolio</a>
+          <a class="text-xs sm:text-xl font-semibold leading-[100%]" href="#">Contact Us</a>
+          <a class="text-xs sm:text-xl font-semibold leading-[100%]" href="#">FAQs</a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between mt-[42px] gap-6 md:gap-3">
+        <div class="text-center md:text-start order-3 md:order-1">
+          <p class="text-xs md:text-sm lg:text-base 2xl:text-xl 2xl:leading-[100%] text-[#F9F9F9]">Copyright © 2025 DICO
+            Studio a Dico
+            company. All Rights
+            Reserved.</p>
+        </div>
+        <div class="flex items-center justify-center gap-6 2xl:gap-8 flex-wrap order-2">
+          <a class="text-xs md:text-sm lg:text-base 2xl:text-xl 2xl:leading-[100%] font-semibold" href="#">Privacy
+            Policy</a>
+          <a class="text-xs md:text-sm lg:text-base 2xl:text-xl 2xl:leading-[100%] font-semibold" href="#">Terms &
+            Conditions</a>
+          <a class="text-xs md:text-sm lg:text-base 2xl:text-xl 2xl:leading-[100%] font-semibold" href="#">Cookie
+            Policy</a>
+        </div>
+        <div class="order-1 md:order-3">
+          <p class="text-xs md:text-sm lg:text-base 2xl:text-xl 2xl:leading-[100%] text-[#F2F2F2]">Website designed by
+            Do It Digital
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <script type="module" src="/src/main.js"></script>
