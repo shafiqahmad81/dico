@@ -129,6 +129,10 @@ header{
         background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(39, 39, 39, 1), rgba(20, 20, 20, 1)) border-box;
         border: 10px solid transparent;
     }
+    .border-gray-dark-2{
+        background: linear-gradient(rgba(39, 39, 39, 0.9), rgba(20, 20, 20, 0.2)) padding-box,linear-gradient(to right, rgba(39, 39, 39, 1), rgba(20, 20, 20, 0.8)) border-box;
+        border: 10px solid transparent;
+    }
 }
 
 

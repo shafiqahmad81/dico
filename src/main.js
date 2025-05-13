@@ -19,3 +19,15 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 });
+
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const mainMenu = document.getElementById('main-menu');
+const closeIcon = document.getElementById('close-icon');
+
+
+hamburgerIcon.addEventListener('click', () => {
+  mainMenu.classList.remove('hidden');
+})
+closeIcon.addEventListener('click', () => {
+  mainMenu.classList.add('hidden');
+})

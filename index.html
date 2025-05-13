@@ -25,19 +25,11 @@
                 <li><a class="text-xl font-semibold leading-[100%]" href="#">About</a></li>
               </ul>
             </nav>
-
-            <!-- mobile -->
-            <!-- <nav class="bg-[#77C4FF] absolute top-20 w-screen h-screen z-60">
-              <ul class="flex flex-col items-center gap-8">
-                <li><a class="text-xl font-semibold leading-[100%]" href="#">Services</a></li>
-                <li><a class="text-xl font-semibold leading-[100%]" href="#">Portfolio</a></li>
-                <li><a class="text-xl font-semibold leading-[100%]" href="#">About</a></li>
-              </ul>
-            </nav> -->
             <a href="#" class="hidden lg:block">
               <button class="btn">Contact</button>
             </a>
-            <svg class="lg:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+            <svg id="hamburger-icon" class="lg:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="none">
               <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
                 d="M3.333 4.168h13.333M3.333 10h13.333M3.333 15.832h13.333" />
             </svg>
@@ -137,46 +129,134 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
+    <!-- mobile menu -->
+    <nav id="main-menu" class="hidden bg-[#77C4FF] border-gray-dark-2 absolute top-0 left-0 right-0  h-screen z-60">
+      <ul class="flex flex-col items-center gap-8 pt-20">
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+
+        <li><a class="text-xl font-semibold leading-[100%]" href="#">Services</a></li>
+        <li><a class="text-xl font-semibold leading-[100%]" href="#">Portfolio</a></li>
+        <li><a class="text-xl font-semibold leading-[100%]" href="#">About</a></li>
+      </ul>
+    </nav>
   </section>
 
   <!-- service section -->
-  <section class="w-full bg-[#292634] overflow-hidden mt-7 py-3.5 lg:py-7">
-    <div class="whitespace-nowrap overflow-hidden relative">
-      <div class="animate-marquee inline-block">
-        <div class="flex gap-[62px] px-4">
-          <!-- Block 1 -->
-          <a href="#" class="flex items-center gap-5 min-w-max">
-            <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
-            <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
+  <section class="w-full overflow-hidden relative z-10  bg-[#292634] mt-7 py-3.5 lg:py-7">
+    <div class="overflow-hidden whitespace-nowrap relative">
+      <div class="flex animate-marquee">
+        <div class="flex gap-x-4">
+          <!-- Item 1 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
               ANIMATION SERVICES
             </span>
           </a>
-          <!-- Block 2 -->
-          <a href="#" class="flex items-center gap-5 min-w-max">
-            <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
-            <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
+
+          <!-- Item 2 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
               3D ART
             </span>
           </a>
-          <!-- Block 3 -->
-          <a href="#" class="flex items-center gap-5 min-w-max">
-            <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
-            <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
+
+          <!-- Item 3 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
               CONCEPT ART
             </span>
           </a>
-          <!-- Block 4 -->
-          <a href="#" class="flex items-center gap-5 min-w-max">
-            <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
-            <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
+
+          <!-- Item 4 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
               2D GAME ART
             </span>
           </a>
-          <!-- Block 5 -->
-          <a href="#" class="flex items-center gap-5 min-w-max">
-            <img class="w-6 lg:w-11" src="./src/assets/icon/star.png" alt="star">
-            <span class="text-white text-sm lg:text-[37.04px] font-alexandria font-bold tracking-[2%]">
+
+          <!-- Item 5 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
               CO-DEVELOPMENT
+            </span>
+          </a>
+
+          <!-- Item 6 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
+              CONCEPT ART
+            </span>
+          </a>
+        </div>
+
+        <!-- Duplicate set -->
+        <div class="flex gap-x-4">
+          <!-- Item 1 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
+              ANIMATION SERVICES
+            </span>
+          </a>
+
+          <!-- Item 2 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
+              3D ART
+            </span>
+          </a>
+
+          <!-- Item 3 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
+              CONCEPT ART
+            </span>
+          </a>
+
+          <!-- Item 4 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
+              2D GAME ART
+            </span>
+          </a>
+
+          <!-- Item 5 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
+              CO-DEVELOPMENT
+            </span>
+          </a>
+
+          <!-- Item 6 -->
+          <a href="#" class="w-auto h-[70px] flex items-center justify-center gap-x-2 px-3 lg:px-7 shrink-0">
+            <img class="w-6 lg:w-11 shrink-0" src="./src/assets/icon/star.png" alt="star" />
+            <span
+              class="whitespace-nowrap overflow-hidden text-white text-sm lg:text-[28px] font-alexandria font-bold tracking-[2%] leading-none">
+              3D ART
             </span>
           </a>
         </div>
@@ -186,7 +266,7 @@
     <style>
       @keyframes marquee {
         0% {
-          transform: translateX(100%);
+          transform: translateX(0%);
         }
 
         100% {
@@ -195,9 +275,10 @@
       }
 
       .animate-marquee {
-        animation: marquee 60s linear infinite;
+        animation: marquee 50s linear infinite;
       }
     </style>
+
   </section>
 
   <!-- partners section -->
@@ -897,7 +978,7 @@
       <div class="swiper-pagination"></div>
     </div>
     <div class="flex items-center justify-center mt-[42px]">
-      <button class="btn">Start your project</button>
+      <a href="#" class="btn inline-block">Start your project</a>
     </div>
   </section>
 
