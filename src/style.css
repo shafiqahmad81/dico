@@ -76,7 +76,7 @@ header{
     h3{
         @apply text-xs lg:text-xl xl:text-[32px] font-semibold xl:leading-[100%]
     }
-    h4{
+    .h4,h4{
         @apply text-sm md:text-xl lg:text-2xl xl:text-[28px] font-semibold xl:leading-[100%]
     }
 }
