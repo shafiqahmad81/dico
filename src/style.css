@@ -46,6 +46,9 @@ header{
 .bg-gradient-custom {
     background: linear-gradient(115.73deg, #1D222E -16.91%, rgba(29, 34, 46, 0) 109.07%);
   }
+.bg-gradient-custom-hover {
+    background: linear-gradient(115.73deg, #1D222E -20.91%, rgba(29, 34, 46, 0.2) 120.07%);
+  }
 .mySwiper.swiper-pagination{
     @apply bottom-4 lg:bottom-[116px]!
 }
