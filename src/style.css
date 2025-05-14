@@ -60,13 +60,13 @@ header{
 }
 
 .developSwiper .swiper-pagination {
-    @media (width >= 64rem) {
-        @apply bottom-[55px]!
+        @apply bottom-2! lg:bottom-[55px]!
         
-    }
-.partnersSwiper .swiper-pagination{
-    @apply bottom-11!
 }
+.partnersSwiper .swiper-pagination{
+    
+    @apply bottom-11!
+
 }
 
 
