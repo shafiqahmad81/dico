@@ -75,7 +75,7 @@ header{
         @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-[54px] font-knight xl:leading-[100%] tracking-[2px] lg:tracking-[3.3px] text-center
     }
     h3{
-        @apply text-xs lg:text-xl xl:text-[32px] font-semibold xl:leading-[100%]
+        @apply text-lg lg:text-xl xl:text-[32px] font-semibold xl:leading-[100%]
     }
     .h4,h4{
         @apply text-sm md:text-xl lg:text-2xl xl:text-[28px] font-semibold xl:leading-[100%]
@@ -121,8 +121,8 @@ header{
     }
     .border-bg-white{
         background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.05)) border-box;
-        border-radius: 24px;
         border: 2px solid transparent;
+        @apply rounded-[10px] lg:rounded-3xl
     }
     .border-gray-orange{
         background: linear-gradient(#0D0D0D, #0D0D0D) padding-box,linear-gradient(to right, rgba(119, 196, 255, 1), rgba(255, 149, 108, 1)) border-box;
