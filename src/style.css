@@ -49,7 +49,7 @@ header{
 .bg-gradient-custom-hover {
     background: linear-gradient(115.73deg, #1D222E -20.91%, rgba(29, 34, 46, 0.2) 120.07%);
   }
-.mySwiper.swiper-pagination{
+.mySwiper .swiper-pagination{
     @apply bottom-4 lg:bottom-[116px]!
 }
 .swiper-pagination-bullet{
@@ -61,7 +61,8 @@ header{
 
 .developSwiper .swiper-pagination {
     @media (width >= 64rem) {
-        bottom: 64px !important;
+        @apply bottom-[55px]!
+        
     }
 .partnersSwiper .swiper-pagination{
     @apply bottom-11!
