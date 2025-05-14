@@ -72,7 +72,7 @@ header{
 
 @layer base{
     h2{
-        @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-[54px] font-knight xl:leading-[100%] tracking-[1.5px] lg:tracking-[3.3px] text-center
+        @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-[54px] font-knight xl:leading-[100%] tracking-[2px] lg:tracking-[3.3px] text-center
     }
     h3{
         @apply text-xs lg:text-xl xl:text-[32px] font-semibold xl:leading-[100%]
