@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
-    font-family: 'KNIGHT WARRIOR';
-    src: url('./assets/fonts/KNIGHTWARRIOR.eot');
-    src: url('./assets/fonts/KNIGHTWARRIOR.eot?#iefix') format('embedded-opentype'),
-        url('./assets/fonts/KNIGHTWARRIOR.woff2') format('woff2'),
-        url('./assets/fonts/KNIGHTWARRIOR.woff') format('woff'),
-        url('./assets/fonts/KNIGHTWARRIOR.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://fonts.cdnfonts.com/css/knight-warrior');
+
 @import "tailwindcss";
 
 @theme{
@@ -31,8 +22,10 @@
     --inset-shadow-md: inset 0px 0px 50px rgba(255, 255, 255, 0.25); 
     --inset-shadow-md-partner: inset 0px 4px 4px rgba(255, 255, 255, 0.25); 
 }
-
-body{
+html,body{
+    @apply overflow-x-hidden
+}
+ body{
     @apply text-lg text-white leading-[100%] bg-primary font-monserrat font-normal min-w-80
   }
 header{
